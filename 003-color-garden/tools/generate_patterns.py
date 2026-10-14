@@ -314,7 +314,9 @@ def main():
     for name, display, fn in PATTERNS:
         data, errs = build_pattern(name, display, fn)
         path = os.path.join(OUT_DIR, "%s.json" % name)
-        with open(path, "w", encoding="utf-8") as f:
+        # newline="\n"：强制 LF，让输出**跨平台**逐字节一致
+        # （Python 在 Windows 上默认把 \n 转成 \r\n，会让同一份脚本在不同系统产出不同字节）
+        with open(path, "w", encoding="utf-8", newline="\n") as f:
             json.dump(data, f, ensure_ascii=False, indent=1)
             f.write("\n")
         total_area = sum(shoelace_area(r["polygon"]) for r in data["regions"])
