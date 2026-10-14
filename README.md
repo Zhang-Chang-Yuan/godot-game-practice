@@ -26,7 +26,7 @@ godot --path 002-piano
 > **002-piano 含第三方音频**：采样授权为 CC BY 3.0，**再分发必须署名**。
 > 详见 [002-piano/LICENSES.md](002-piano/LICENSES.md)。
 
-![Piano 88](docs/002-piano.png)
+![Piano 88](002-piano/docs/screenshot.png)
 
 ## 说明
 

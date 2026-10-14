@@ -3,7 +3,7 @@
 一个用 **Godot 4.7** 做的可弹奏钢琴：**88 个键全都有独立采样**，配节拍器、延音踏板和演奏录制/回放。
 音源复刻自 GitHub 开源项目 [gleitz/midi-js-soundfonts](https://github.com/gleitz/midi-js-soundfonts) 的 FluidR3_GM 音色库。
 
-![Piano 88 界面](../docs/002-piano.png)
+![Piano 88 界面](docs/screenshot.png)
 
 ---
 
@@ -79,7 +79,9 @@
 ├── README.md
 ├── LICENSES.md                # 音源来源与授权（CC BY 3.0，必须署名）
 ├── docs/
-│   └── INTERFACES.md          # 接口契约：所有公开签名/信号/常量的唯一事实来源
+│   ├── INTERFACES.md          # 接口契约：所有公开签名/信号/常量的唯一事实来源
+│   ├── screenshot.png         # 上面的界面截图（.gdignore 让 Godot 不把它当资源导入）
+│   └── .gdignore
 ├── audio/piano/               # 88 个采样：A0.mp3 As0.mp3 B0.mp3 ... C8.mp3
 │   └── ATTRIBUTION.md         # 音频署名（CC BY 3.0 强制要求）
 ├── scenes/
