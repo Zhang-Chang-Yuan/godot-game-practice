@@ -1,0 +1,17 @@
+# 仓库内文本文件一律以 LF 存储与检出，避免 Windows / macOS 协作时整文件 diff
+* text=auto eol=lf
+
+# 二进制资源：禁止任何换行或编码转换
+*.glb   binary
+*.gltf  binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.ogg   binary
+*.wav   binary
+*.mp3   binary
+*.ttf   binary
+*.otf   binary
+*.res   binary
+*.bin   binary
