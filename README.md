@@ -6,6 +6,7 @@ Godot 游戏开发练习集。每个子目录是一个**可以独立运行的 Go
 |---|---|---|
 | 001 | [001-learn-about-geometry](001-learn-about-geometry/) | 幼儿「认识几何」答题小游戏（10 题 / 排行榜），含 Blender 4.5 → Godot 4.7 的 GLB 资源管线 |
 | 002 | [002-piano](002-piano/) | **Piano 88**：88 键全采样钢琴，带节拍器、延音踏板、演奏录制/回放；音源复刻自 FluidR3_GM（CC BY 3.0） |
+| 003 | [003-color-garden](003-color-garden/) | **Color Garden**：7 个图案的涂色游戏，demo 重点为 **PhysicsPointQuery 点击检测 / Tween 动画 / 加色混合**；图案由 Blender 4.5 脚本生成 |
 
 ## 环境
 
