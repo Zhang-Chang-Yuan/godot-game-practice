@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://xur6niadv0km"]
+
+[ext_resource type="Script" path="res://scripts/leaderboard_screen.gd" id="1_lb"]
+
+[node name="LeaderboardScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_lb")
+
+[node name="TitleLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -300.0
+offset_top = 20.0
+offset_right = 300.0
+offset_bottom = 100.0
+theme_override_font_sizes/font_size = 56
+horizontal_alignment = 1
+text = "排 行 榜"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+offset_left = 40.0
+offset_top = 110.0
+offset_right = 1240.0
+offset_bottom = 560.0
+
+[node name="RowsBox" type="VBoxContainer" parent="ScrollContainer"]
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="EmptyLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -400.0
+offset_top = 300.0
+offset_right = 400.0
+offset_bottom = 370.0
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+text = "还没有记录，快去玩一局吧！"
+
+[node name="ClearButton" type="Button" parent="."]
+offset_left = 30.0
+offset_top = 600.0
+offset_right = 250.0
+offset_bottom = 690.0
+theme_override_font_sizes/font_size = 40
+text = "清空记录"
+
+[node name="BackButton" type="Button" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -250.0
+offset_top = 600.0
+offset_right = -30.0
+offset_bottom = 690.0
+theme_override_font_sizes/font_size = 40
+text = "返 回"
+
+[connection signal="pressed" from="ClearButton" to="." method="_on_clear_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_pressed"]

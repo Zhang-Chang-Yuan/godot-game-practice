@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://d0lf36b24lct8"]
+
+[ext_resource type="Script" uid="uid://c53a0ng34fxy0" path="res://scripts/main.gd" id="1_tx5wa"]
+
+[node name="StartScreen" type="Node2D" unique_id=2074218801]
+script = ExtResource("1_tx5wa")
+
+[node name="Button_Start_Game" type="Button" parent="." unique_id=1602673177]
+offset_left = 409.0
+offset_top = 239.0
+offset_right = 861.0
+offset_bottom = 372.0
+theme_override_font_sizes/font_size = 64
+text = "开 始 游 戏"
+
+[node name="Button_Ranking" type="Button" parent="." unique_id=1250172364]
+offset_left = 410.0
+offset_top = 426.0
+offset_right = 862.0
+offset_bottom = 559.0
+theme_override_font_sizes/font_size = 64
+text = "排 行 榜"

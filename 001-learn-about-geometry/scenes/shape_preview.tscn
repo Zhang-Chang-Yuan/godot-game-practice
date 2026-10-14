@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://dufmptowdw1b7"]
+
+[ext_resource type="Script" path="res://scripts/shape_preview.gd" id="1_shape"]
+
+[node name="ShapePreview" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource("1_shape")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+stretch = true
+mouse_filter = 2
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+own_world_3d = true
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(512, 512)
+render_target_update_mode = 2
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 3.2)
+
+[node name="KeyLight" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 0.64, 0.77, 0, -0.77, 0.64, 1.9, 2.6, 2.2)
+light_energy = 1.1
+
+[node name="FillLight" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 0.85, 0.53, 0, -0.53, 0.85, -2.0, 0.5, 2.0)
+light_energy = 0.4
+
+[node name="ShapeHolder" type="Node3D" parent="SubViewportContainer/SubViewport"]

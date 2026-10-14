@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://c82eoksq5rafd"]
+
+[ext_resource type="Script" uid="uid://bhaag0c10jvlb" path="res://scripts/loading_screen.gd" id="1_ep5rh"]
+
+[node name="LoadingScreen" type="Node2D" unique_id=1852080712]
+script = ExtResource("1_ep5rh")
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1337770576]
+offset_top = 630.0
+offset_right = 1283.0
+offset_bottom = 720.0
+theme_override_font_sizes/font_size = 64
+
+[node name="TipLabel" type="Label" parent="." unique_id=485317217]
+offset_left = 5.0
+offset_top = 290.0
+offset_right = 1285.0
+offset_bottom = 379.0
+theme_override_font_sizes/font_size = 64
+
+[node name="TitleLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -400.0
+offset_top = 100.0
+offset_right = 400.0
+offset_bottom = 180.0
+theme_override_font_sizes/font_size = 64
+horizontal_alignment = 1
+text = "正在准备题目…"
+
+[node name="LoadingTimer" type="Timer" parent="." unique_id=1254209683]
+wait_time = 0.6
+one_shot = true

@@ -1,0 +1,24 @@
+# Godot 4+ 引擎缓存与导入产物（可重新生成，不入库）
+.godot/
+/android/
+
+# Godot 通用忽略
+.import/
+export.cfg
+export_presets.cfg
+
+# 自动生成的翻译资源（由 CSV 生成）
+*.translation
+
+# Mono / C# 相关
+.mono/
+data_*/
+mono_crash.*.json
+
+# 编辑器与系统垃圾文件
+.vscode/
+.idea/
+*.swp
+*~
+Thumbs.db
+desktop.ini
